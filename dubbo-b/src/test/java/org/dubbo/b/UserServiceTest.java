@@ -8,7 +8,7 @@ public class UserServiceTest
 {
     @Before
     public void setUp() throws Exception {
-        ClassPathXmlApplicationContext  applicationContext = new ClassPathXmlApplicationContext(
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
                 "classpath:dubbo/dubbo-*.xml");
         applicationContext.start();
         System.in.read(); // 按任意键退出

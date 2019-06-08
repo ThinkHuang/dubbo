@@ -22,6 +22,6 @@
         ref="userServiceImpl" />
 
     <!-- 将具体的实现类加入到Spring容器中 -->
-    <bean id="userServiceImpl" class="org.dubbo.service.UserServiceImpl" />
+    <!-- <bean id="userServiceImpl" class="org.dubbo.service.UserServiceImpl" /> -->
 
 </beans>
