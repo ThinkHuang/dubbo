@@ -5,14 +5,13 @@ import java.util.List;
 import org.dubbo.a.service.IQueryService;
 import org.dubbo.bean.User;
 import org.dubbo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.alibaba.dubbo.config.annotation.Reference;
 
 @Service
 public class QueryService implements IQueryService
 {
-    @Reference
+    @Autowired
     private UserService userService;
     
     @Override
